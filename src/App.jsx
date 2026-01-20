@@ -1,18 +1,24 @@
 import { useState } from 'react'
 import './App.css'
-import Ques1 from './Ques1'
-import Ques2 from './Ques2'
-import Ques3 from './Ques3'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Services from './components/Services'
+import About from './components/About'
+import Testimonials from './components/Testimonials'
+import Booking from './components/Booking'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      {/* <Ques1 /> */}
-      <Ques2 />
-      {/* <Ques3 /> */}
-    </>
+    <div className="app">
+      <Header />
+      <Hero />
+      <Services />
+      <About />
+      <Testimonials />
+      <Booking />
+      <Footer />
+    </div>
   )
 }
 
